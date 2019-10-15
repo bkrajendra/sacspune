@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  padding-top: 4rem;
+  margin-bottom: 280px; /* Margin bottom by footer height */
+}
+
+main {
+  flex: 1 0 auto;
+}
+footer {
+  position: absolute;
+
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+
+  }
+
+}
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 2) {
+    body {
+      padding-top: 4rem;
+      margin-bottom: 580px; /* Margin bottom by footer height */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  body {
+    padding-top: 4rem;
+    margin-bottom: 580px; /* Margin bottom by footer height */
+  }
+}

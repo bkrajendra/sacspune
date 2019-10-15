@@ -1,0 +1,216 @@
+<header class="h-100">
+  <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar intro-fixed-nav primary-color-dark" [containerInside]="false">
+    <mdb-navbar-brand>
+      <a class="logo navbar-brand" routerLink="/">
+        <img src="assets/img/logo.png" width="48px" align="ABSMIDDLE">&nbsp;<strong>SACS</strong>
+      </a>
+    </mdb-navbar-brand>
+    <links>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a routerLink="" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item waves-light" routerLinkActive="active" mdbWavesEffect>
+          <a routerLink="/about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item waves-light" routerLinkActive="active" dropdown>
+          <a dropdownToggle mdbWavesEffect class="nav-link dropdown-toggle">Admissions</a>
+          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+              <a routerLink="/nur" class="dropdown-item waves-light" mdbWavesEffect >Nursery Admissions</a>
+              <a routerLink="/result" class="dropdown-item waves-light" mdbWavesEffect >Admission Result</a>
+              <a routerLink="/other" class="dropdown-item waves-light" mdbWavesEffect >Other Class Admissions</a>
+              <div class="divider dropdown-divider"></div>
+              <a routerLink="/agecriteria" class="dropdown-item waves-light" mdbWavesEffect >Age Criteria</a>
+          </div>
+        </li>
+        <li class="nav-item waves-light " routerLinkActive="active"  dropdown>
+          <a dropdownToggle mdbWavesEffect class="nav-link dropdown-toggle">Administration</a>
+          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+              <a routerLink="/staff" class="dropdown-item waves-light" mdbWavesEffect >Staff</a>
+              <a routerLink="/pta" class="dropdown-item waves-light" mdbWavesEffect >Parents Teachers Association</a>
+              <a routerLink="/studentscouncil" class="dropdown-item waves-light" mdbWavesEffect >Elected Office Bearers</a>
+
+          </div>
+        </li>
+        <li class="nav-item waves-light" routerLinkActive="active" mdbWavesEffect>
+          <a routerLink="/academics" class="nav-link">Academics</a>
+        </li>
+        <li class="nav-item waves-light" routerLinkActive="active" mdbWavesEffect>
+          <a routerLink="/cocurriculars" class="nav-link">Co-Curriculars</a>
+        </li>
+        <li class="nav-item waves-light" routerLinkActive="active" mdbWavesEffect>
+          <a routerLink="/rules"  class="nav-link">Rules</a>
+        </li>
+        <li class="nav-item waves-light" routerLinkActive="active" mdbWavesEffect>
+            <a routerLink="/contactus" class="nav-link">Contact Us</a>
+          </li>
+        <li class="nav-item waves-light purple-gradient z-depth-2" mdbWavesEffect>
+          <a class="nav-link" href="https://www.aceventura.in/SACS/index.php">Login</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav nav-flex-icons">
+        <li class="nav-item waves-light" mdbWavesEffect>
+            <a class="nav-link"><mdb-icon fab icon="facebook-f"></mdb-icon></a>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+            <a class="nav-link"><mdb-icon fab icon="twitter"></mdb-icon></a>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+            <a class="nav-link"><mdb-icon fab icon="instagram"></mdb-icon></a>
+        </li>
+    </ul>
+    </links>
+  </mdb-navbar>
+  <!-- Main -->
+
+  <!-- /.Main -->
+</header>
+<!--Main Navigation-->
+
+<div class="view intro-2" *ngIf="router.url=='/'">
+  <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+    <mdb-carousel-item>
+      <div class="view w-100">
+        <img class="d-block w-100" src="assets/img/items1.jpg" alt="First slide">
+        <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Sports</h3>
+        <p>The qualities of the leadership, sharing, team spirit</p>
+      </div>
+    </mdb-carousel-item>
+    <mdb-carousel-item>
+      <div class="view w-100">
+        <img class="d-block w-100" src="assets/img/items2.jpg" alt="Second slide">
+        <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Learning with Nature</h3>
+        <p>Encourages Self-mastery</p>
+      </div>
+    </mdb-carousel-item>
+    <mdb-carousel-item>
+      <div class="view w-100">
+        <img class="d-block w-100" src="assets/img/items3.jpg" alt="Third slide">
+        <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">A GREAT PLACE TO LEARN</h3>
+        <p>SACS Campus</p>
+      </div>
+    </mdb-carousel-item>
+  </mdb-carousel>
+
+</div>
+<!-- navbar above -->
+
+<router-outlet></router-outlet>
+
+
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color primary-color pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container d-none d-lg-block">
+
+    <!--Grid row-->
+    <div class="row">
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-12 mb-4">
+
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img src="assets/img/img1.jpg" class="img-fluid" alt="">
+          <a>
+            <div class="mask rgba-white-light" mdbWavesEffect></div>
+          </a>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4">
+
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img src="assets/img/img2.jpg" class="img-fluid" alt="">
+          <a>
+            <div class="mask rgba-white-light" mdbWavesEffect></div>
+          </a>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4">
+
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img src="assets/img/img3.jpg" class="img-fluid" alt="">
+          <a>
+            <div class="mask rgba-white-light" mdbWavesEffect></div>
+          </a>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-12 mb-4">
+
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img src="assets/img/img4.jpg" class="img-fluid" alt="">
+          <a>
+            <div class="mask rgba-white-light" mdbWavesEffect></div>
+          </a>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4">
+
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img src="assets/img/img5.jpg" class="img-fluid" alt="">
+          <a>
+            <div class="mask rgba-white-light" mdbWavesEffect></div>
+          </a>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4">
+
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img src="assets/img/img6.jpg" class="img-fluid" alt="">
+          <a>
+            <div class="mask rgba-white-light" mdbWavesEffect></div>
+          </a>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="http://www.arnoldcentralschool.org/"> St. Arnold's Central School, Pune</a> | Crafter by <a href="https://app.iocare.in">ioCare</a> and SACS IT Team
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
